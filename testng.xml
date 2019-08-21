@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  <groups>
+  					<dependencies>
+                          <group name="FirstGroup" depends-on="SecondGroup"></group>
+                    </dependencies>
+  </groups>
+      <classes>
+      <!-- <class name="TestCases.AppsPageTest"/>
+      <class name="com.codebind.HelloWorldTest"/>
+      <class name="TestCases.DashboardPageTest"/>
+      <class name="TestCases.AppBuilderPageTest"/> -->
+      <class name="TestCases.LoginPageTest"/>
+      <class name="TestCases.CreateAppPageTest"/>    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
