@@ -16,50 +16,50 @@ public class CreateAppPageOR{
 	
 	public CreateAppPageOR(WebDriver driver) {
 		PageFactory.initElements(new AjaxElementLocatorFactory(driver, timeOut), this);
-	}//
+	}
 	@FindBy(xpath = "//input[@id='formName']") 
-	protected WebElement AppName;
+	protected WebElement appName;
 	
 	@FindBy(xpath = "//span[text() ='Save']")
-	protected WebElement Save;
+	protected WebElement save;
 	
 	@FindBy(xpath = "//a[@class='btn btn-sm cvs-prim-btn' or contains ='Publish to device']")
-	protected WebElement  Publishtodevice;
+	protected WebElement  publishToDevice;
 	
 	
 	@FindBy(xpath = "//th[text()='Name']/preceding::label")
-	protected WebElement checkboxatmodel1;
+	protected WebElement checkBoxAtModel1;
 	
 	@FindBy(xpath = "//button[contains(text(),'Next: Assign to Groups')]")
-	protected WebElement AssigntoGroups;
+	protected WebElement assignToGroups;
 	
 	@FindBy(xpath = "//th[text()='Name']/preceding::label")
-	protected WebElement checkboxatmodel2; 
+	protected WebElement checkBoxAtModel2; 
 	
 	@FindBy(xpath = "//button[contains(text(),'Next: Assign to Users')]")
-	protected WebElement NextAssigntoUsers;
+	protected WebElement nextAssignToUsers;
     	
 	@FindBy(xpath = "//button[class='btn cvs-prim-btn' or text() = 'Publish']")
-	protected WebElement Publish;
+	protected WebElement publish;
 	
 	@FindBy(xpath = "//span[text()='Add screen']") 
-	protected WebElement Addscreen;
+	protected WebElement addScreen;
 	
 	@FindBy(xpath = "//button[class = 'btn cvs-def-btn' or text()='Close App Builder']")
-	protected WebElement closeappBuilder;
+	protected WebElement closeAppBuilder;
 	
 	@FindBy(xpath = "//button[class = 'btn cvs-def-btn' or text()='Keep Editing']")
-	protected WebElement KeepEditing;
+	protected WebElement keepEditing;
 	
 	@FindBy(xpath = "//a[class = 'btn cvs-def-btn' or text()='App Settings']")
-	protected WebElement AppSettings;
+	protected WebElement appSettings;
 	
 	@FindBy(xpath = "//div[@class='panel-group']/div") 
 	protected List<WebElement> panels;
 	
-	protected String eachPanelxpath ="./div/h4/a/span";
+	protected String eachPanelXpath ="./div/h4/a/span";
 		
-	protected String Innerelementxpath1 = ".//ul[@class='palette clearfix list-unstyled ng-scope']/li";
+	protected String innerElementXpath1 = ".//ul[@class='palette clearfix list-unstyled ng-scope']/li";
 }
 
 

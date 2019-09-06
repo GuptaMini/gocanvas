@@ -12,7 +12,7 @@ public class AppBuilderNewFuncPage extends AppBuilderNewPageOR{
 	public AppBuilderNewFuncPage(WebDriver driver) {
 		super(driver);
 		this.driver =driver;
-		if(!ChooseATemplate.isDisplayed())
+		if(!chooseATemplate.isDisplayed())
 		{
 			throw new SkipException("this is not Choose a template page");
 		}
@@ -20,7 +20,7 @@ public class AppBuilderNewFuncPage extends AppBuilderNewPageOR{
 	public CreateAppfuncPage clickOnStart()
 	{
 		System.out.println("Control is here");
-		Start.click();
+		start.click();
 		return new CreateAppfuncPage(this.driver);
 	}
 }
