@@ -21,67 +21,62 @@ import com.google.common.collect.Multiset.Entry;
 
 import ObjectRepository.AppsPageOR;
 
-public class AppsPageFunc extends AppsPageOR{
+public class AppsPageFunc extends AppsPageOR {
 	WebDriver driver;
-	//JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	public AppsPageFunc(WebDriver driver) {
 		super(driver);
-		this.driver=driver;
-		
-		if(!CreateApp.isEnabled())
-		{
+		this.driver = driver;
+
+		if (!createApp.isDisplayed()) {
 			throw new SkipException("this is not Apps page");
 		}
 	}
-	public AppBuilderNewFuncPage clickOnCreateApp()
-	{
-		CreateApp.click();
-		return new AppBuilderNewFuncPage(this.driver);	
+
+	public AppBuilderNewFuncPage clickOnCreateApp() {
+		createApp.click();
+		return new AppBuilderNewFuncPage(this.driver);
 	}
-	public AppsPageFunc verifyNewApp()
-	{
+
+	public AppsPageFunc verifyNewApp() {
 		return new AppsPageFunc(this.driver);
 	}
-	public boolean VerifyNewAppOnAppPg(HashMap<String, String> appt) throws InterruptedException
-	{
+
+	public boolean VerifyNewAppOnAppPg(HashMap<String, String> appt) throws InterruptedException {
 		boolean found = false;
 		System.out.print(appt.get("newAppName"));
 		System.out.println("");
-		SearchApps.sendKeys(appt.get("newAppName"));
+		searchApps.sendKeys(appt.get("newAppName"));
 		Thread.sleep(2000);
 		Actions action = new Actions(driver);
 		action.sendKeys(Keys.ENTER).build().perform();
-		
-		for(WebElement applist : lst_CreatedApps){
-				if(applist.findElement(By.xpath(appName)).getText().equalsIgnoreCase(appt.get("newAppName"))){
-					found= true;
-						WebElement editLink = applist.findElement(By.xpath(editApp));
-						editLink.click();
-						Thread.sleep(8000);		
-					}
-				}
-		return found;	
+
+		for (WebElement applist : lst_CreatedApps) {
+			if (applist.findElement(By.xpath(appName)).getText().equalsIgnoreCase(appt.get("newAppName"))) {
+				found = true;
+				WebElement editLink = applist.findElement(By.xpath(editApp));
+				editLink.click();
+				Thread.sleep(8000);
+			}
+		}
+		return found;
 	}
-	public boolean verifyExistingFields(HashMap<String, String> appt)
-	{
-		boolean isMatched=false;
-		for(HashMap.Entry<String, String> entry : appt.entrySet()) {
-			isMatched= false;
-			for(WebElement fList : fieldList)
-			{
-				if(fList.getText().equalsIgnoreCase("New "+entry.getValue())) {
-					System.out.println(entry.getValue() +" found in ui");
+
+	public boolean verifyExistingFields(HashMap<String, String> appt) {
+		boolean isMatched = false;
+		for (HashMap.Entry<String, String> entry : appt.entrySet()) {
+			isMatched = false;
+			for (WebElement fList : fieldList) {
+				if (fList.getText().equalsIgnoreCase("New " + entry.getValue())) {
+					System.out.println(entry.getValue() + " found in ui");
 					isMatched = true;
 					break;
 				}
 			}
-			if(!isMatched) {
-				System.out.println(entry.getValue() +"not found in ui");
+			if (!isMatched) {
+				System.out.println(entry.getValue() + "not found in ui");
 			}
 		}
 		return isMatched;
 	}
 }
-	
-

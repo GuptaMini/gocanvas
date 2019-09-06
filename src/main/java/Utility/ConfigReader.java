@@ -22,8 +22,6 @@ public class ConfigReader {
 	{
 		readPropertiesFile();
 		writePropertiesFile();
-		//readPropertiesFile();
-		
 	}
 	public static void readPropertiesFile()
 	{

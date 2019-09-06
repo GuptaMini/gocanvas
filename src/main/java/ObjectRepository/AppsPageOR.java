@@ -17,7 +17,7 @@ public class AppsPageOR extends MenuPageOR{
 	}
 	
 	@FindBy(xpath = "//span[text()='Create App']")
-	protected WebElement CreateApp;
+	protected WebElement createApp;
 	//driver.findElement(By.xpath("//span[text()='Create App']")).click();
 	
 	
@@ -29,7 +29,7 @@ public class AppsPageOR extends MenuPageOR{
 	protected String editApp="./td[5]/a[@data-original-title='Edit App']";
 	
 	@FindBy(xpath = "//input[@id = 'common_search_field']")
-	protected WebElement SearchApps;
+	protected WebElement searchApps;
 	
 	@FindBy(xpath = "//div[@class='field-label']/div")
 	protected List<WebElement> fieldList ;

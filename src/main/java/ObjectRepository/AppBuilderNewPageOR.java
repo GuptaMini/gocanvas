@@ -12,10 +12,10 @@ public class AppBuilderNewPageOR{
 		
 	}
 	@FindBy(xpath = "//button[@id='start-tamplate' and @class = 'btn letsgo pull-left']") 
-	protected WebElement Start;
+	protected WebElement start;
 	
 	@FindBy(xpath = "//button[@id='start-tamplate']") 
-	protected WebElement ChooseATemplate;
+	protected WebElement chooseATemplate;
 	
 
 }

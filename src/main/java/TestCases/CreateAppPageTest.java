@@ -2,25 +2,12 @@ package TestCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-
 import java.util.HashMap;
-import java.util.List;
-
-import org.openqa.selenium.By;
-import org.testng.annotations.Test;
-
 import Pages.AppBuilderNewFuncPage;
 import Pages.AppsPageFunc;
 import Pages.CreateAppfuncPage;
 import Pages.DashboardPage;
 import Utility.ConfigReader;
-
-
 
 public class CreateAppPageTest extends BaseTestCase{
 	AppBuilderNewFuncPage AppBuilder;

@@ -2,27 +2,27 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61324" started-at="2019-08-20T06:32:49Z" finished-at="2019-08-20T06:33:51Z">
+  <suite name="Default suite" duration-ms="81417" started-at="2019-09-04T16:24:40Z" finished-at="2019-09-04T16:26:02Z">
     <groups>
       <group name="FirstGroup">
         <method signature="CreateAppPageTest.verifyCreateApp()[pri:0, instance:TestCases.CreateAppPageTest@1b604f19]" name="verifyCreateApp" class="TestCases.CreateAppPageTest"/>
       </group> <!-- FirstGroup -->
     </groups>
-    <test name="Default test" duration-ms="61324" started-at="2019-08-20T06:32:49Z" finished-at="2019-08-20T06:33:51Z">
+    <test name="Default test" duration-ms="81417" started-at="2019-09-04T16:24:40Z" finished-at="2019-09-04T16:26:02Z">
       <class name="TestCases.CreateAppPageTest">
-        <test-method status="PASS" signature="beforetest()[pri:0, instance:TestCases.CreateAppPageTest@1b604f19]" name="beforetest" is-config="true" duration-ms="9" started-at="2019-08-20T12:02:49Z" finished-at="2019-08-20T12:02:49Z">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:TestCases.CreateAppPageTest@1b604f19]" name="beforetest" is-config="true" duration-ms="23" started-at="2019-09-04T21:54:40Z" finished-at="2019-09-04T21:54:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method status="PASS" signature="beforeclass()[pri:0, instance:TestCases.CreateAppPageTest@1b604f19]" name="beforeclass" is-config="true" duration-ms="8177" started-at="2019-08-20T12:02:49Z" finished-at="2019-08-20T12:02:58Z">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:TestCases.CreateAppPageTest@1b604f19]" name="beforeclass" is-config="true" duration-ms="16001" started-at="2019-09-04T21:54:40Z" finished-at="2019-09-04T21:54:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method status="PASS" signature="verifyCreateApp()[pri:0, instance:TestCases.CreateAppPageTest@1b604f19]" name="verifyCreateApp" duration-ms="51012" started-at="2019-08-20T12:02:58Z" finished-at="2019-08-20T12:03:49Z">
+        <test-method status="PASS" signature="verifyCreateApp()[pri:0, instance:TestCases.CreateAppPageTest@1b604f19]" name="verifyCreateApp" duration-ms="63245" started-at="2019-09-04T21:54:56Z" finished-at="2019-09-04T21:55:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateApp -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestCases.CreateAppPageTest@1b604f19]" name="afterClass" is-config="true" duration-ms="2112" started-at="2019-08-20T12:03:49Z" finished-at="2019-08-20T12:03:51Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestCases.CreateAppPageTest@1b604f19]" name="afterClass" is-config="true" duration-ms="2125" started-at="2019-09-04T21:55:59Z" finished-at="2019-09-04T21:56:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
